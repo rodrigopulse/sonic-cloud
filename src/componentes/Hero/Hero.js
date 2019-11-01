@@ -6,20 +6,30 @@ import './Hero.scss';
 import Curvas from './HeroCurvas.svg';
 
 class Hero extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         const estiloThumb = {
             backgroundImage: 'url(' + Thumb + ')'
         }
-        this.state={ estiloThumb };
+        var dados = {
+            titulo: this.props.titulo,
+            subtitulo: this.props.subtitulo,
+            linkBotao: this.props.linkBotao
+        }
+        if(dados.linkBotao) {
+            var isBotao = true;
+        }
+        this.state={ estiloThumb, dados, isBotao };
     }
     render(){
         return(
             <div className="hero"  style={ this.state.estiloThumb }>
                 <div className="hero__conteudo">
-                    <h1 className="hero__titulo">Telefonia em nuvem</h1>
-                    <h2 className="hero__subtitulo">Plataforma de Comunicação Panasonic em nuvem com serviço personalizado.</h2>
-                    <a className="botao-padrao" href="#">Entrar em Contato</a>
+                    <h1 className="hero__titulo">{this.state.dados.titulo}</h1>
+                    <h2 className="hero__subtitulo">{this.state.dados.subtitulo}</h2>
+                    {this.state.isBotao ? (
+                        <a className="botao-padrao" href={this.state.dados.linkBotao}>Entrar em Contato</a>
+                    ) : (null)}
                 </div>
                 <div className="hero__curvas">
                     <img src={Curvas} alt="Curvas" />

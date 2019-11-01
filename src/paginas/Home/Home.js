@@ -5,7 +5,11 @@ class Home extends React.Component{
     render(){
         return(
             <div className='container'>
-                <Hero />
+                <Hero
+                    titulo = "Telefonia em nuvem"
+                    subtitulo = "Plataforma de Comunicação Panasonic em nuvem com serviço personalizado."
+                    linkBotao = "#"
+                />
             </div>
         );
     }
