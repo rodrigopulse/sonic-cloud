@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css';
-import './index.css';
+import './index.scss';
+import './assets/sass/grid.scss'
 
 import Home from './paginas/Home/Home';
 
