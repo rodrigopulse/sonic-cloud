@@ -1,12 +1,12 @@
 .servicos-home {
     width: 100%;
     position: relative;
-    display: block;
+    display: flex;
     margin: 0;
     padding: 0;
     margin-bottom: 80px;
+    flex-wrap: wrap;
     @media screen and (min-width: 768px) {
-        display: flex;
         align-items: center;
     }
     &__conteudo {
@@ -15,6 +15,10 @@
         display: block;
         margin: 0;
         padding: 0;
+        @media screen and (max-width: 767px) {
+            webkit-order: 2;
+            order: 3
+        }
         @media screen and (min-width: 768px) {
             width: 60%;
             padding-right: 20px;
@@ -27,6 +31,10 @@
         margin: 0;
         padding: 0;
         text-align: center;
+        @media screen and (max-width: 767px) {
+            webkit-order: 1;
+            order: 1;
+        }
         @media screen and (min-width: 768px) {
             text-align: right;
             width: 40%;
