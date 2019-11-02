@@ -31,6 +31,11 @@
         margin: 0;
         padding: 0;
         text-align: center;
+        img {
+            @media screen and (max-width: 520px) {
+                max-width: 220px;
+            }
+        }
         @media screen and (max-width: 767px) {
             webkit-order: 1;
             order: 1;
