@@ -6,8 +6,8 @@ import './Hero.scss';
 import Curvas from './HeroCurvas.svg';
 
 class Hero extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor( props ) {
+        super( props );
         const estiloThumb = {
             backgroundImage: 'url(' + Thumb + ')'
         }
@@ -19,9 +19,9 @@ class Hero extends React.Component {
         if(dados.linkBotao) {
             var isBotao = true;
         }
-        this.state={ estiloThumb, dados, isBotao };
+        this.state = { estiloThumb, dados, isBotao };
     }
-    render(){
+    render() {
         return(
             <div className="hero"  style={ this.state.estiloThumb }>
                 <div className="hero__conteudo">

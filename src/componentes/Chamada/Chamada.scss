@@ -1,0 +1,21 @@
+.chamada {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    position: relative;
+}
+.titulo-chamada {
+    max-width: 920px;
+    font-size: 54px;
+    line-height: 67px;
+    margin: 0 auto;
+    text-align: center;
+}
+.chamada--azul {
+    background: #266fa6;
+    padding: 70px 25px;
+    .titulo-chamada {
+        color: #fff;
+    }
+}
