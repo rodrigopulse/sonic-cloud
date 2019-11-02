@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.scss';
 import Hero from '../../componentes/Hero/Hero';
 import Chamada from '../../componentes/Chamada/Chamada';
+import Footer from '../../componentes/Footer/Footer';
 import iconeServidor from '../../assets/icones/icone-servidor.svg';
 import iconeNuvem from '../../assets/icones/icone-nuvem.svg';
 
@@ -51,6 +52,8 @@ class Home extends React.Component {
 					titulo = "O primeiro produto nesse segmento do Brasil utilizando tecnologia da Panasonic"
 					estilo = "azul"
 				/>
+
+				<Footer />
 
 			</div>
 

@@ -1,8 +1,16 @@
 .botao-padrao {
+    font-size: 16px;
     color: #fff;
-    padding: 16px 30px;
+    padding: 13px 30px;
     background: #F49600;
     text-decoration: none;
     display: inline-block;
     border-radius: 13px;
+    -webkit-appearance: none;
+    border: 0;
+    cursor: pointer;
+    transition: .3s all linear;
+    &:hover {
+        background: #FE6906;
+    }
 }

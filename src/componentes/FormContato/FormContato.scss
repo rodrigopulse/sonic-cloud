@@ -1,0 +1,32 @@
+.formulario-contato {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    &__grupo {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+        margin: 0 0 15px 0;
+        padding: 0;
+    }
+    &__label {
+        width: 100%;
+        height: auto;
+        display: block;
+        font-size: 16px;
+    }
+    &__input, &__textarea {
+        width: 100%;
+        height: auto;
+        display: block;
+        font-size: 16px;
+        padding: 12px 10px;
+        box-shadow: none;
+        -webkit-appearance: none;
+        border: 1px solid #29639E;
+    }
+}
