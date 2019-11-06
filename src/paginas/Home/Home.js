@@ -5,6 +5,7 @@ import Chamada from '../../componentes/Chamada/Chamada';
 import Footer from '../../componentes/Footer/Footer';
 import iconeServidor from '../../assets/icones/icone-servidor.svg';
 import iconeNuvem from '../../assets/icones/icone-nuvem.svg';
+import Header from '../../componentes/Header/Header';
 
 class Home extends React.Component {
 	render(){
@@ -12,10 +13,14 @@ class Home extends React.Component {
 
 			<div className='container'>
 
+				<Header
+					paginaAtual = 'home'
+				/>
+
 				<Hero
-						titulo = "Telefonia em nuvem"
-						subtitulo = "Plataforma de Comunicação Panasonic em nuvem com serviço personalizado."
-						linkBotao = "#"
+					titulo = "Telefonia em nuvem"
+					subtitulo = "Plataforma de Comunicação Panasonic em nuvem com serviço personalizado."
+					linkBotao = "#"
 				/>
 
 				<div className="container container--max">
