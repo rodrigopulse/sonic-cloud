@@ -1,5 +1,4 @@
 import React from 'react';
-import Thumb from '../../assets/img/hero/hero-home-desktop.jpg';
 
 import '../../assets/sass/botoes.scss'
 import './Hero.scss';
@@ -9,7 +8,7 @@ class Hero extends React.Component {
     constructor( props ) {
         super( props );
         const estiloThumb = {
-            backgroundImage: 'url(' + Thumb + ')'
+            backgroundImage: 'url(' + this.props.imagem + ')'
         }
         var dados = {
             titulo: this.props.titulo,

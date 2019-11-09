@@ -3,9 +3,11 @@ import './Home.scss';
 import Hero from '../../componentes/Hero/Hero';
 import Chamada from '../../componentes/Chamada/Chamada';
 import Footer from '../../layout/Footer/Footer';
+import Header from '../../layout/Header/Header';
+// Imagens
 import iconeServidor from '../../assets/icones/icone-servidor.svg';
 import iconeNuvem from '../../assets/icones/icone-nuvem.svg';
-import Header from '../../layout/Header/Header';
+import imagemHero from '../../assets/img/hero/hero-home-desktop.jpg';
 
 class Home extends React.Component {
 	render(){
@@ -21,6 +23,7 @@ class Home extends React.Component {
 					titulo = "Telefonia em nuvem"
 					subtitulo = "Plataforma de Comunicação Panasonic em nuvem com serviço personalizado."
 					linkBotao = "#"
+					imagem = {imagemHero}
 				/>
 
 				<div className="container container--max">
@@ -32,7 +35,7 @@ class Home extends React.Component {
 							</p>
 						</div>
 						<div className="servicos-home__icone">
-							<img src={iconeServidor} />
+							<img src={iconeServidor} alt="Ícone Servidores"/>
 						</div>
 					</div>
 				</div>
@@ -40,7 +43,7 @@ class Home extends React.Component {
 				<div className="container container--max">
 						<div className="servicos-home">
 							<div className="servicos-home__icone servicos-home__icone--esquerda">
-								<img src={iconeNuvem} />
+								<img src={iconeNuvem} alt="Ícone Cloud"/>
 							</div>
 							<div className="servicos-home__conteudo">
 								<p>

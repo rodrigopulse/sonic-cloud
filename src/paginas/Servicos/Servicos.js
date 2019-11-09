@@ -8,6 +8,7 @@ import './Servicos.scss';
 import imagemTelefone from '../../assets/img/servicos/telefone.jpg';
 import imagemServidor from '../../assets/img/servicos/servidor-tier-3.jpg';
 import imagemCallCenter from '../../assets/img/servicos/ideal-call-center.jpg';
+import imagemHero from '../../assets/img/hero/hero-home-desktop.jpg';
 
 class Servicos extends React.Component{
 	render() {
@@ -19,7 +20,8 @@ class Servicos extends React.Component{
 
 				<Hero
 					titulo = "Nossos Serviços"
-					subtitulo = "Plataforma de Comunicação Panasonic em nuvem com serviço personalizado "
+					subtitulo = "Plataforma de Comunicação Panasonic em nuvem com serviço personalizado"
+					imagem = {imagemHero}
 				/>
 
 				<div className="servicos-container container--max">
