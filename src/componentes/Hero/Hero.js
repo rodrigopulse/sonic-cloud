@@ -33,6 +33,7 @@ class Hero extends React.Component {
                 {/* <div className="hero__curvas">
                     <img src={Curvas} alt="Curvas" />
                 </div> */}
+                <div className="hero__overlay"></div>
             </div>
         );
     }

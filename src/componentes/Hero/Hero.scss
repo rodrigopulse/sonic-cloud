@@ -9,6 +9,15 @@
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
+    &__overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background: rgba(0, 0, 0, .6);
+    }
     &__conteudo {
         width: 100%;
         max-width: 630px;
@@ -17,6 +26,7 @@
         height: auto;
         padding: 25px;
         margin: 0 auto;
+        z-index: 3;
     }
     &__titulo {
         font-size: 62px;
