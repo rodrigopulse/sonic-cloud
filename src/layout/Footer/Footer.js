@@ -1,5 +1,5 @@
 import React from 'react';
-import FormContato from '../FormContato/FormContato';
+import FormContato from '../../componentes/FormContato/FormContato';
 import './Footer.scss';
 
 class Footer extends React.Component {

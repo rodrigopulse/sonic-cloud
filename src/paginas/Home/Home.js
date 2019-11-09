@@ -2,10 +2,10 @@ import React from 'react';
 import './Home.scss';
 import Hero from '../../componentes/Hero/Hero';
 import Chamada from '../../componentes/Chamada/Chamada';
-import Footer from '../../componentes/Footer/Footer';
+import Footer from '../../layout/Footer/Footer';
 import iconeServidor from '../../assets/icones/icone-servidor.svg';
 import iconeNuvem from '../../assets/icones/icone-nuvem.svg';
-import Header from '../../componentes/Header/Header';
+import Header from '../../layout/Header/Header';
 
 class Home extends React.Component {
 	render(){

@@ -31,9 +31,9 @@ class Hero extends React.Component {
                         <a className="botao-padrao" href={this.state.dados.linkBotao}>Entrar em Contato</a>
                     ) : (null)}
                 </div>
-                <div className="hero__curvas">
+                {/* <div className="hero__curvas">
                     <img src={Curvas} alt="Curvas" />
-                </div>
+                </div> */}
             </div>
         );
     }
