@@ -1,0 +1,70 @@
+.servicos-container {
+	width: 100%;
+	position: relative;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 80px;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	@media screen and (min-width: 768px) {
+		align-items: center;
+	}
+	&__conteudo {
+		width: 100%;
+		position: relative;
+		display: block;
+		margin: 0;
+		padding: 0;
+		@media screen and (max-width: 767px) {
+			webkit-order: 2;
+			order: 3
+		}
+		@media screen and (min-width: 768px) {
+			width: 60%;
+			padding-right: 20px;
+		}
+	}
+	&__imagem {
+		width: 100%;
+		position: relative;
+		display: block;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		img {
+				@media screen and (max-width: 520px) {
+						max-width: 220px;
+				}
+		}
+		@media screen and (max-width: 767px) {
+				webkit-order: 1;
+				order: 1;
+		}
+		@media screen and (min-width: 768px) {
+				text-align: right;
+				width: 40%;
+		}
+		&--esquerda {
+				@media screen and (min-width: 768px) {
+						text-align: left;
+				}
+		}
+	}
+	&__chamada {
+		width: 100%;
+		height: auto;
+		display: block;
+		position: relative;
+		padding: 75px 0;
+		text-align: center;
+		font-weight: 700;
+		h3 {
+			color: #266fa6;
+			@media screen and (min-width: 768px) {
+				font-size: 54px;
+				line-height: 65px;
+			}
+		}
+	}
+}

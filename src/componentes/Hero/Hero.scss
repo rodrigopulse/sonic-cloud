@@ -2,32 +2,36 @@
     width: 100%;
     height: 95vh;
     position: relative;
-    margin: 0 0 35px 0;
+    margin: 0 0 70px 0;
     display: flex;
     align-items: center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
     &__conteudo {
         width: 100%;
-        max-width: 430px;
+        max-width: 630px;
         display: block;
         position: relative;
         height: auto;
         padding: 25px;
+        margin: 0 auto;
     }
     &__titulo {
-        font-size: 52px;
-        line-height: 52px;
+        font-size: 62px;
+        line-height: 62px;
         font-weight: 700;
         color: #fff;
         margin-bottom: 30px;
+        text-align: center;
     }
     &__subtitulo {
         font-size: 22px;
         line-height: 27px;
         color: #fff;
         margin-bottom: 30px;
+        text-align: center;
     }
     &__curvas {
         position: absolute;

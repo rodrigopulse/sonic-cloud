@@ -3,7 +3,7 @@ import Thumb from '../../assets/img/hero/hero-home-desktop.jpg';
 
 import '../../assets/sass/botoes.scss'
 import './Hero.scss';
-import Curvas from './HeroCurvas.svg';
+//import Curvas from './HeroCurvas.svg';
 
 class Hero extends React.Component {
     constructor( props ) {
