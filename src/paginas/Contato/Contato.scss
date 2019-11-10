@@ -1,0 +1,28 @@
+.contato {
+  display: flex;
+  flex-wrap: wrap;
+  &__conteudo {
+    width: 100%;
+    @media screen and (min-width: 769px) {
+      width: 40%;
+    }
+    &-item {
+      margin-bottom: 20px;
+    }
+  }
+  &__formulario {
+    width: 100%;
+    @media screen and (min-width: 769px) {
+      width: 60%;
+      padding-left: 20px;
+    }
+  }
+  &__texto {
+    span {
+      width: 100%;
+      color: #29639e;
+      display: block;
+      font-weight: 700;
+    }
+  }
+}
