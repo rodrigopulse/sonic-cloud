@@ -1,4 +1,5 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
 
 //Layout
 import Header from '../../layout/Header/Header';
@@ -13,6 +14,13 @@ class Contato extends React.Component {
 	render() {
 		return(
 			<div className='container'>
+
+				<Helmet>
+						<meta charSet="utf-8" />
+						<title>Contato - Sonic Cloud</title>
+						<meta name="description" content="Faça um orçamento com a Sonic Cloud e tenha um serviço de Telefonia em Nuvem pronto para o futuro." />
+				</Helmet>
+
 				<Header
 					paginaAtual = 'contato'
 				/>

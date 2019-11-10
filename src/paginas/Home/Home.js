@@ -1,4 +1,6 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
+
 import './Home.scss';
 import Hero from '../../componentes/Hero/Hero';
 import Chamada from '../../componentes/Chamada/Chamada';
@@ -14,6 +16,11 @@ class Home extends React.Component {
 		return(
 
 			<div className='container container-home'>
+				<Helmet>
+						<meta charSet="utf-8" />
+						<title>Telefonia em Nuvem - Sonic Cloud</title>
+						<meta name="description" content="Instale na sua empresa a Telefonia em Nuvem da Sonic Cloud, esteja pronto para o futuro!" />
+				</Helmet>
 
 				<Header
 					paginaAtual = 'home'

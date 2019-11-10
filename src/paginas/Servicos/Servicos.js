@@ -1,4 +1,5 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
 import Header from '../../layout/Header/Header';
 import Footer from '../../layout/Footer/Footer';
 import Hero from '../../componentes/Hero/Hero';
@@ -14,6 +15,13 @@ class Servicos extends React.Component{
 	render() {
 		return (
 			<div className='container container-servicos'>
+
+				<Helmet>
+						<meta charSet="utf-8" />
+						<title>Serviços de Telefonia em Nuvem - Sonic Cloud</title>
+						<meta name="description" content="Veja nossos serviços de Telefonia em Nuvem e contrate hoje mesmo a Sonic Cloud para cuidar da sua empresa." />
+				</Helmet>
+
 				<Header
 					paginaAtual = 'servicos'
 				/>
