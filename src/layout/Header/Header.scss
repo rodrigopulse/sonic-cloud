@@ -1,17 +1,29 @@
 .header {
-    width: 100%;
-    //max-width: 1110px;
-    height: auto;
-    display: block;
-    position: absolute;
-    padding: 20px 25px;
-    z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 3;
-    @media screen and (min-width: 768px) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+	width: 100%;
+	//max-width: 1110px;
+	height: auto;
+	display: flex;
+	position: absolute;
+	padding: 20px 25px;
+	z-index: 4;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	justify-content: space-between;
+	@media screen and (min-width: 768px) {
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+.menu-hamburguer-container {
+	display: flex;
+	align-items: center;
+	z-index: 6;
+	position: relative;
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+.menu--ativo {
+	display: flex;
 }

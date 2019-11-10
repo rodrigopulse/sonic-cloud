@@ -8,19 +8,19 @@ class FormContato extends React.Component {
             <div className='formulario-contato'>
                 <form>
                     <div className="formulario-contato__grupo" id="formContato">
-                        <label className="formulario-contato__label" for="nome">*Nome:</label>
+                        <label className="formulario-contato__label" htmlFor="nome">*Nome:</label>
                         <input className="formulario-contato__input" placeholder="Digite seu nome" />
                     </div>
                     <div className="formulario-contato__grupo">
-                        <label className="formulario-contato__label" for="email">*E-mail:</label>
+                        <label className="formulario-contato__label" htmlFor="email">*E-mail:</label>
                         <input className="formulario-contato__input" placeholder="Digite seu E-mail" />
                     </div>
                     <div className="formulario-contato__grupo">
-                        <label className="formulario-contato__label" for="telefone">Telefone:</label>
+                        <label className="formulario-contato__label" htmlFor="telefone">Telefone:</label>
                         <input className="formulario-contato__input" placeholder="Digite seu Telefone" />
                     </div>
                     <div className="formulario-contato__grupo">
-                        <label className="formulario-contato__label" for="mensagem">*Mensagem:</label>
+                        <label className="formulario-contato__label" htmlFor="mensagem">*Mensagem:</label>
                         <textarea className="formulario-contato__textarea" placeholder="Escreva sua mensagem" rows="10"></textarea>
                     </div>
                 </form>
