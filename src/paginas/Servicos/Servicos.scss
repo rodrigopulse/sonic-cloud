@@ -3,7 +3,7 @@
 	position: relative;
 	display: flex;
 	margin: 0;
-	padding: 0;
+	//padding: 0;
 	margin-bottom: 80px;
 	flex-wrap: wrap;
 	margin: 0 auto;
@@ -33,22 +33,22 @@
 		padding: 0;
 		text-align: center;
 		img {
-				@media screen and (max-width: 520px) {
-						max-width: 220px;
-				}
+			@media screen and (max-width: 520px) {
+				max-width: 220px;
+			}
 		}
 		@media screen and (max-width: 767px) {
-				webkit-order: 1;
-				order: 1;
+			webkit-order: 1;
+			order: 1;
 		}
 		@media screen and (min-width: 768px) {
-				text-align: right;
-				width: 40%;
+			text-align: right;
+			width: 40%;
 		}
 		&--esquerda {
-				@media screen and (min-width: 768px) {
-						text-align: left;
-				}
+			@media screen and (min-width: 768px) {
+				text-align: left;
+			}
 		}
 	}
 	&__chamada {

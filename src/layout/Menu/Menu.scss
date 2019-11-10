@@ -35,6 +35,9 @@
 		}
 		@media screen and (min-width: 769px) {
 			margin-right: 25px;
+			&:nth-last-child(2) {
+				margin-right: 30px;
+			}
 		}
 	}
 	&__link-fone {
@@ -45,6 +48,11 @@
 		align-items: center;
 		@media screen and (max-width: 768px) {
 			display: none;
+		}
+		img, svg {
+			max-width: 15px;
+			position: relative;
+			margin-right: 7px;
 		}
 	}
 	&__link {
@@ -80,12 +88,6 @@
 			&::before {
 				opacity: 1;
 			}
-		}
-		img, svg {
-			max-width: 15px;
-			position: relative;
-			top: 3px;
-			margin-right: 7px;
 		}
 	}
 }
