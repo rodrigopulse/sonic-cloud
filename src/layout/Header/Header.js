@@ -12,10 +12,10 @@ class Header extends React.Component {
 	}
 	handleClick() {
 		var element = document.getElementsByClassName('menu')[0];
-   	element.classList.toggle("menu--ativo");
-    this.setState({
-			open: !this.state.open
-    });
+		element.classList.toggle("menu--ativo");
+		this.setState({
+				open: !this.state.open
+		});
 	}
 	render() {
 		return(

@@ -2,7 +2,6 @@ import React from 'react';
 
 import '../../assets/sass/botoes.scss'
 import './HeroVideo.scss';
-import '../../assets/plugins/bideo';
 import VideoHero from '../../assets/img/hero/bg-sonic-cloud.mp4';
 class HeroVideo extends React.Component {
     constructor( props ) {
@@ -31,7 +30,7 @@ class HeroVideo extends React.Component {
                     ) : (null)}
                 </div>
                 <div className="hero-video__overlay"></div>
-                <video id="background-video" loop autoPlay>
+                <video id="background-video" muted loop autoPlay>
                     <source src={VideoHero} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>

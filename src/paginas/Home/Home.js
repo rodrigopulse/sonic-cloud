@@ -1,6 +1,5 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
-import { useMediaQuery } from 'react-responsive'
 
 import './Home.scss';
 import Hero from '../../componentes/Hero/Hero';
@@ -12,24 +11,18 @@ import Header from '../../layout/Header/Header';
 import iconeServidor from '../../assets/icones/icone-servidor.svg';
 import iconeNuvem from '../../assets/icones/icone-nuvem.svg';
 import imagemHero from '../../assets/img/hero/hero-home-desktop.jpg';
-import { booleanLiteral } from '@babel/types';
 
 class Home extends React.Component {
 	constructor() {
 		super()
 		this.state = { isMobile: '' };
 	}
-	isMobile() {
+	render(){
 		if (window.innerWidth < 768 ) {
 			this.state.isMobile = true;
 		} else {
 			this.state.isMobile = false;
 		}
-	}
-	componentDidMount(){
-		this.isMobile();
-	}
-	render(){
 		return(
 
 			<div className='container container-home'>
@@ -52,7 +45,8 @@ class Home extends React.Component {
 				<Hero
 					titulo = "Telefonia em nuvem"
 					subtitulo = "Plataforma de Comunicação Panasonic em nuvem com serviço personalizado."
-					linkBotao = "#"
+					linkBotao = "/contato"
+					imagem = {imagemHero}
 				/> }
 				
 
