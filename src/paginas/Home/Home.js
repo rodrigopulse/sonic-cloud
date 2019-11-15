@@ -3,6 +3,7 @@ import {Helmet} from "react-helmet";
 
 import './Home.scss';
 import Hero from '../../componentes/Hero/Hero';
+import HeroVideo from '../../componentes/HeroVideo/HeroVideo';
 import Chamada from '../../componentes/Chamada/Chamada';
 import Footer from '../../layout/Footer/Footer';
 import Header from '../../layout/Header/Header';
@@ -26,11 +27,10 @@ class Home extends React.Component {
 					paginaAtual = 'home'
 				/>
 
-				<Hero
+				<HeroVideo
 					titulo = "Telefonia em nuvem"
 					subtitulo = "Plataforma de Comunicação Panasonic em nuvem com serviço personalizado."
 					linkBotao = "#"
-					imagem = {imagemHero}
 				/>
 
 				<div className="container container--max">
