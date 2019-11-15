@@ -1,5 +1,6 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
+import { useMediaQuery } from 'react-responsive'
 
 import './Home.scss';
 import Hero from '../../componentes/Hero/Hero';
@@ -11,8 +12,23 @@ import Header from '../../layout/Header/Header';
 import iconeServidor from '../../assets/icones/icone-servidor.svg';
 import iconeNuvem from '../../assets/icones/icone-nuvem.svg';
 import imagemHero from '../../assets/img/hero/hero-home-desktop.jpg';
+import { booleanLiteral } from '@babel/types';
 
 class Home extends React.Component {
+	constructor() {
+		super()
+		this.state = { isMobile: '' };
+	}
+	isMobile() {
+		if (window.innerWidth < 768 ) {
+			this.state.isMobile = true;
+		} else {
+			this.state.isMobile = false;
+		}
+	}
+	componentDidMount(){
+		this.isMobile();
+	}
 	render(){
 		return(
 
@@ -26,19 +42,26 @@ class Home extends React.Component {
 				<Header
 					paginaAtual = 'home'
 				/>
-
+				{!this.state.isMobile &&
 				<HeroVideo
 					titulo = "Telefonia em nuvem"
 					subtitulo = "Plataforma de Comunicação Panasonic em nuvem com serviço personalizado."
 					linkBotao = "#"
-				/>
+				/> }
+				{this.state.isMobile &&
+				<Hero
+					titulo = "Telefonia em nuvem"
+					subtitulo = "Plataforma de Comunicação Panasonic em nuvem com serviço personalizado."
+					linkBotao = "#"
+				/> }
+				
 
 				<div className="container container--max">
 					<div className="servicos-home">
 						<div className="servicos-home__conteudo">
 							<p>Nosso serviço agrega em um único valor aparelho, linha, ligações ilimitadas, softphone mobile, softphone para Windows, call center, gravação, tudo isso com suporte técnico presencial e remoto.</p>
 							<p>
-								<a className="botao-padrao" href="/sobre">Saiba Mais</a>
+								<a className="botao-padrao" href="/servicos">Saiba Mais</a>
 							</p>
 						</div>
 						<div className="servicos-home__icone">
@@ -57,7 +80,7 @@ class Home extends React.Component {
 										Como a sua telefonia estará em nuvem, conseguimos aumentar e diminuir ramais da sua empresa remotamente, sem cabos, sem hardwares imensos, sem dores de cabeça.
 								</p>
 								<p>
-										<a className="botao-padrao" href="/sobre">Saiba Mais</a>
+										<a className="botao-padrao" href="/servicos">Saiba Mais</a>
 								</p>
 							</div>
 						</div>
