@@ -14,18 +14,28 @@ class FormContato extends React.Component {
 		e.preventDefault()
     const { nome, email, telefone, mensagem } = this.state
     let templateParams = {
-      from_name: email,
-      to_name: 'Sonic Cloud',
-      subject: "Mensagem Vinda do Site Sonic Cloud",
-      message_html: mensagem,
+      email: email,
+			nome: nome,
+			telefone: telefone,
+      mensagem: mensagem,
      }
      emailjs.send(
       'gmail',
       'contato',
        templateParams,
       'user_2fS6upKTcpzVJIpEScXzE'
-     )
+		 )
+		 this.resetForm();
 	}
+	resetForm() {
+    this.setState({
+      nome: '',
+      email: '',
+      telefone: '',
+      mensagem: '',
+		})
+		alert("Mensagem enviada com sucesso");
+  }
 	handleChange = (param, e) => {
     this.setState({ [param]: e.target.value })
   }
