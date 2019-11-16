@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.0",
     "emailjs-com": "^2.4.1",
     "jquery": "^3.4.1",
     "node-sass": "^4.13.0",
@@ -15,6 +16,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
+  "homepage": "https://vagalumeria.com.br/clientes/sonic-cloud/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
