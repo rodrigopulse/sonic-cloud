@@ -1,5 +1,10 @@
 import React from 'react';
-
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+  } from "react-router-dom";
 import '../../assets/sass/botoes.scss'
 import './HeroVideo.scss';
 import VideoHero from '../../assets/img/hero/bg-sonic-cloud.mp4';
@@ -26,7 +31,7 @@ class HeroVideo extends React.Component {
                     <h1 className="hero-video__titulo">{this.state.dados.titulo}</h1>
                     <h2 className="hero-video__subtitulo">{this.state.dados.subtitulo}</h2>
                     {this.state.isBotao ? (
-                        <a className="botao-padrao" href={this.state.dados.linkBotao}>Entrar em Contato</a>
+                        <Link className="botao-padrao" to={`${process.env.PUBLIC_URL}/contato`}>Entrar em Contato</Link>
                     ) : (null)}
                 </div>
                 <div className="hero-video__overlay"></div>

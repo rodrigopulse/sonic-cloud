@@ -1,5 +1,10 @@
 import React from 'react';
-
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+  } from "react-router-dom";
 import '../../assets/sass/botoes.scss'
 import './Hero.scss';
 //import Curvas from './HeroCurvas.svg';
@@ -27,7 +32,7 @@ class Hero extends React.Component {
                     <h1 className="hero__titulo">{this.state.dados.titulo}</h1>
                     <h2 className="hero__subtitulo">{this.state.dados.subtitulo}</h2>
                     {this.state.isBotao ? (
-                        <a className="botao-padrao" href={this.state.dados.linkBotao}>Entrar em Contato</a>
+                        <Link className="botao-padrao" to={`${process.env.PUBLIC_URL}/contato`}>Entrar em Contato</Link>
                     ) : (null)}
                 </div>
                 {/* <div className="hero__curvas">

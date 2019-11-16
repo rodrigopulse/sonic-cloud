@@ -2,6 +2,13 @@ import React from 'react';
 import Telefone from '../../assets/icones/icone-telefone.svg';
 import './Menu.scss';
 
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+  } from "react-router-dom";
+
 class Menu extends React.Component {
 	constructor( props ) {
 		super( props );
@@ -31,13 +38,13 @@ class Menu extends React.Component {
 			<div className="menu">
 				<ul className="menu__ul">
 					<li className="menu__li">
-						<a className={homeClass} href="/">Home</a>
+						<Link className={homeClass} to={`${process.env.PUBLIC_URL}/`}>Home</Link>
 					</li>
 					<li className="menu__li">
-						<a className={servicosClass} href="/servicos">Serviços</a>
+						<Link className={servicosClass} to={`${process.env.PUBLIC_URL}/servicos`}>Serviços</Link>
 					</li>
 					<li className="menu__li">
-						<a className={contatoClass} href="/contato">Contato</a>
+						<Link className={contatoClass} to={`${process.env.PUBLIC_URL}/contato`}>Contato</Link>
 					</li>
 					<li className="menu__li">
 						<a className="menu__link-fone" href="telefone">

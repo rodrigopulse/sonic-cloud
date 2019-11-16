@@ -1,6 +1,11 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
-
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+  } from "react-router-dom";
 import './Home.scss';
 import Hero from '../../componentes/Hero/Hero';
 import HeroVideo from '../../componentes/HeroVideo/HeroVideo';
@@ -56,7 +61,7 @@ class Home extends React.Component {
 						<div className="servicos-home__conteudo">
 							<p>Nosso serviço agrega em um único valor aparelho, linha, ligações ilimitadas, softphone mobile, softphone para Windows, call center, gravação, tudo isso com suporte técnico presencial e remoto.</p>
 							<p>
-								<a className="botao-padrao" href="/servicos">Saiba Mais</a>
+								<Link className="botao-padrao" to={`${process.env.PUBLIC_URL}/servicos`}>Saiba Mais</Link>
 							</p>
 						</div>
 						<div className="servicos-home__icone">
@@ -75,7 +80,7 @@ class Home extends React.Component {
 										Como a sua telefonia estará em nuvem, conseguimos aumentar e diminuir ramais da sua empresa remotamente, sem cabos, sem hardwares imensos, sem dores de cabeça.
 								</p>
 								<p>
-										<a className="botao-padrao" href="/servicos">Saiba Mais</a>
+									<Link className="botao-padrao" to={`${process.env.PUBLIC_URL}/servicos`}>Saiba Mais</Link>
 								</p>
 							</div>
 						</div>
