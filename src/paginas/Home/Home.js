@@ -16,7 +16,7 @@ import Whats from '../../componentes/Whats/Whats';
 // Imagens
 import iconeServidor from '../../assets/icones/icone-servidor.svg';
 import iconeNuvem from '../../assets/icones/icone-nuvem.svg';
-import imagemHero from '../../assets/img/hero/hero-home-desktop.jpg';
+import imagemHero from '../../assets/img/hero/hero-home-mobile.jpg';
 
 class Home extends React.Component {
 	constructor() {
