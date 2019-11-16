@@ -1,3 +1,4 @@
+@import "../../assets/sass/variaveis";
 .chamada {
     width: 100%;
     height: auto;
@@ -17,7 +18,7 @@
     }
 }
 .chamada--azul {
-    background: #266fa6;
+    background: $corPrimaria;
     padding: 70px 25px;
     .titulo-chamada {
         color: #fff;

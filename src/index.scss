@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:700|Roboto:400,700&display=swap');
+@import "./assets/sass/variaveis.scss";
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -6,7 +7,7 @@ body {
   line-height: 27px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #242424;
+  color: $corTexto;
   overflow-x: hidden;
 }
 *, *:before, *:after {

@@ -1,3 +1,4 @@
+@import "../../assets/sass/variaveis";
 #background-video {
     float: left;
     top: 0;
@@ -42,14 +43,14 @@
         font-size: 62px;
         line-height: 62px;
         font-weight: 700;
-        color: #266fa6;
+        color: $corPrimaria;
         margin-bottom: 30px;
         text-align: center;
     }
     &__subtitulo {
         font-size: 22px;
         line-height: 27px;
-        color: #266fa6;
+        color: $corPrimaria;
         margin-bottom: 30px;
         text-align: center;
     }

@@ -1,8 +1,10 @@
+@import "variaveis.scss";
+
 .botao-padrao {
     font-size: 16px;
     color: #fff;
     padding: 13px 30px;
-    background: #F49600;
+    background: $corSecundaria;
     text-decoration: none;
     display: inline-block;
     border-radius: 13px;
@@ -11,6 +13,6 @@
     cursor: pointer;
     transition: .3s all linear;
     &:hover {
-        background: #FE6906;
+        background: $corSecundariaHover;
     }
 }

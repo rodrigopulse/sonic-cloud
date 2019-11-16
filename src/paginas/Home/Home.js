@@ -7,6 +7,7 @@ import HeroVideo from '../../componentes/HeroVideo/HeroVideo';
 import Chamada from '../../componentes/Chamada/Chamada';
 import Footer from '../../layout/Footer/Footer';
 import Header from '../../layout/Header/Header';
+import Whats from '../../componentes/Whats/Whats';
 // Imagens
 import iconeServidor from '../../assets/icones/icone-servidor.svg';
 import iconeNuvem from '../../assets/icones/icone-nuvem.svg';
@@ -17,13 +18,13 @@ class Home extends React.Component {
 		super()
 		this.state = { isMobile: '' };
 	}
-	render(){
+	render() {
 		if (window.innerWidth < 768 ) {
 			this.state.isMobile = true;
 		} else {
 			this.state.isMobile = false;
 		}
-		return(
+		return (
 
 			<div className='container container-home'>
 				<Helmet>
@@ -86,7 +87,7 @@ class Home extends React.Component {
 				/>
 
 				<Footer />
-
+				<Whats />
 			</div>
 
 		);

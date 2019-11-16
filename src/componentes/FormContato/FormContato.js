@@ -83,7 +83,7 @@ class FormContato extends React.Component {
 								rows="10"
 							></textarea>
 						</div>
-						<input className="botao-padrao" type="submit" value="Enviar" />
+						<input className="botao-padrao" type="submit" value="Enviar Mensagem" />
 				</form>
 			</div>
 		);
