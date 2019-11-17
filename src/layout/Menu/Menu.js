@@ -49,7 +49,7 @@ class Menu extends React.Component {
 					<li className="menu__li">
 						<a className="menu__link-fone" href="telefone">
 							<img src={Telefone} alt="Ícone Telefone" />
-							<span>11 99889-7890</span>
+							<span>11 5060-3000</span>
 						</a>
 					</li>
 				</ul>

@@ -37,12 +37,12 @@ class Contato extends React.Component {
 								Rua Ribeiro Lacerda, 283 <br />
 								Jd. Da Saúde - São Paulo - SP
 							</p>
-							<a className="botao-padrao" href="/contato">Ver no mapa</a>
+							<a className="botao-padrao" target="_blank" href="https://goo.gl/maps/W45gYBdTEvGH4yEy8">Ver no mapa</a>
 						</div>
 						<div className="contato__conteudo-item">
 							<p className="contato__texto">
 								<span>Telefone:</span>
-								11 2463-7890
+								11 5060-3000
 							</p>
 						</div>
 						<div className="contato__conteudo-item">
