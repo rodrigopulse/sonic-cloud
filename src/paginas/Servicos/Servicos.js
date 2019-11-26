@@ -7,12 +7,23 @@ import Chamada from '../../componentes/Chamada/Chamada';
 import './Servicos.scss';
 //Imagens
 import imagemTelefone from '../../assets/img/servicos/telefone.jpg';
+import imagemSoftPhone from '../../assets/img/servicos/soft-phone.jpg';
+import imagemSoftPhoneMobile from '../../assets/img/servicos/soft-phone-mobile.jpg';
 import imagemServidor from '../../assets/img/servicos/servidor-tier-3.jpg';
 import imagemCallCenter from '../../assets/img/servicos/ideal-call-center.jpg';
 import imagemHero from '../../assets/img/hero/hero-home-desktop.jpg';
 
-class Servicos extends React.Component{
+class Servicos extends React.Component {
+	constructor() {
+		super()
+		this.state = { isMobile: '' };
+	}
 	render() {
+		if (window.innerWidth < 768 ) {
+			this.state.isMobile = true;
+		} else {
+			this.state.isMobile = false;
+		}
 		return (
 			<div className='container container-servicos'>
 
@@ -43,6 +54,14 @@ class Servicos extends React.Component{
 				</div>
 
 				<div className="servicos-container container--max">
+				{ this.state.isMobile ? (
+					<img className="imagem-soft-phone" src={ imagemSoftPhoneMobile } alt="Softphone"/>
+				) : (
+					<img className="imagem-soft-phone" src={ imagemSoftPhone } alt="Softphone"/>
+				) }
+				</div>
+
+				<div className="servicos-container container--max">
 					<div className="servicos-container__imagem servicos-container__imagem--esquerda">
 						<img src={imagemServidor} alt="Servidor Tier III"/>
 					</div>
@@ -53,7 +72,7 @@ class Servicos extends React.Component{
 				</div>
 
 				<Chamada
-					titulo = "Atenda seu ramal onde estiver, basta uma conexão com a internet para que você possa receber chamadas."
+					titulo = "Atenda seu ramal de qualquer lugar, basta uma conexão com a internet para que você possa receber chamadas."
 					estilo = "azul"
 				/>
 
