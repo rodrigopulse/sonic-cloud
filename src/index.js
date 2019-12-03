@@ -19,9 +19,9 @@ ReactDOM.render(
     <div className="wrapper">
         <Router>
             <div className="container">
-                <Route exact path={`${process.env.PUBLIC_URL}/`}  component={ Home } />
-                <Route exact path={`${process.env.PUBLIC_URL}/servicos`} component={ Servicos } />
-                <Route exact path={`${process.env.PUBLIC_URL}/contato`} component={ Contato } />
+                <Route exact path={`${process.env.PUBLIC_URL}/`} component={ Home } />
+                <Route path={`${process.env.PUBLIC_URL}/servicos`} component={ Servicos } />
+                <Route path={`${process.env.PUBLIC_URL}/contato`} component={ Contato } />
             </div>
         </Router>
     </div> , document.getElementById('root'));
