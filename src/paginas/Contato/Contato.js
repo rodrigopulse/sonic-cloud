@@ -12,6 +12,9 @@ import imagemHero from '../../assets/img/hero/hero-contato-desktop.jpg';
 import './Contato.scss';
 
 class Contato extends React.Component {
+	componentDidMount() {
+		window.scrollTo(0, 0)
+	}
 	render() {
 		return(
 			<div className='container'>

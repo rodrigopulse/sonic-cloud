@@ -19,6 +19,9 @@ class Servicos extends React.Component {
 		super()
 		this.state = { isMobile: '' };
 	}
+	componentDidMount() {
+		window.scrollTo(0, 0)
+	}
 	render() {
 		if (window.innerWidth < 768 ) {
 			this.state.isMobile = true;

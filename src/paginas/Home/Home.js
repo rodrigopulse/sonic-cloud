@@ -54,7 +54,6 @@ class Home extends React.Component {
 					linkBotao = "/contato"
 					imagem = {imagemHero}
 				/> }
-				
 
 				<div className="container container--max">
 					<div className="servicos-home">
