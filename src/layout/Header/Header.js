@@ -36,9 +36,7 @@ class Header extends React.Component {
 				<div className="header__logo">
 					<img src={Logo} alt="Logo Sonic Cloud" />
 				</div>
-				<Menu
-					paginaAtual = {this.state.paginaAtual}
-				/>
+				<Menu />
 			</header>
 		);
 }

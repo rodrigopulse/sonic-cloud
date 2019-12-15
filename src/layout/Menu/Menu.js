@@ -19,10 +19,10 @@ class Menu extends React.Component {
 						<NavLink className="menu__link" activeClassName="menu__link menu__link--ativo" to={`${process.env.PUBLIC_URL}/contato`}>Contato</NavLink>
 					</li>
 					<li className="menu__li">
-						<a className="menu__link-fone" href="telefone">
+						<div className="menu__link-fone">
 							<img src={Telefone} alt="Ícone Telefone" />
-							<span>11 5060-3000</span>
-						</a>
+							<span className="">11 5060-3000</span>
+						</div>
 					</li>
 				</ul>
 			</div>
