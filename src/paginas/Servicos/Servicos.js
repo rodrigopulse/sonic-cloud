@@ -46,7 +46,7 @@ class Servicos extends React.Component {
 				<div className="servicos-container container--max">
 					<div className="servicos-container__conteudo">
 						<p>Nossa solução de telefonia hospedada na web, traz para você cliente, maior escalabilidade, mobilidade e eficiência sem investimento.</p>
-						<p>Acompanha o aparelho, a linha ligações ilimitadas e a portabilidade.</p>
+						<p>Acompanha o aparelho, ligações ilimitadas e a portabilidade.</p>
 					</div>
 					<div className="servicos-container__imagem">
 						<img src={imagemTelefone} alt="Telefone Panasonic"/>
@@ -67,7 +67,7 @@ class Servicos extends React.Component {
 					</div>
 					<div className="servicos-container__conteudo">
 						<p>Nossa plataforma está alocada em datacenters Tier 3 com disponibilidade de 99,9%.</p>
-						<p>Utilizamos servidores Panasonic e nosso data center.</p>
+						<p>Utilizamos servidores Panasonic em nossos data center.</p>
 					</div>
 				</div>
 
