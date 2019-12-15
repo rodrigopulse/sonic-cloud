@@ -1,5 +1,6 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
+import Whats from '../../componentes/Whats/Whats';
 
 //Layout
 import Header from '../../layout/Header/Header';
@@ -56,6 +57,7 @@ class Contato extends React.Component {
 						<FormContato />
 					</div>
 				</div>
+				<Whats />
 			</div>
 		);
 	}

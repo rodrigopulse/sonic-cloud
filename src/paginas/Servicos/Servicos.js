@@ -4,6 +4,7 @@ import Header from '../../layout/Header/Header';
 import Footer from '../../layout/Footer/Footer';
 import Hero from '../../componentes/Hero/Hero';
 import Chamada from '../../componentes/Chamada/Chamada';
+import Whats from '../../componentes/Whats/Whats';
 import './Servicos.scss';
 //Imagens
 import imagemTelefone from '../../assets/img/servicos/telefone.jpg';
@@ -93,6 +94,7 @@ class Servicos extends React.Component {
 				/>
 
 				<Footer />
+				<Whats />
 			</div>
 		);
 	}
