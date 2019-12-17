@@ -1,5 +1,6 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import axios from 'axios';
 import './FormContato.scss';
 import '../../assets/sass/botoes.scss';
 
@@ -9,23 +10,20 @@ class FormContato extends React.Component {
     email: '',
     telefone: '',
     mensagem: '',
-  }
+	}
+
 	handleSubmit(e) {
 		e.preventDefault()
-    const { nome, email, telefone, mensagem } = this.state
-    let templateParams = {
-      email: email,
+		const{email, nome, telefone, mensagem} = this.state;
+		axios.post('https://cors-anywhere.herokuapp.com/https://vagalumeria.com.br/sendmail',
+		{
+			emailSend: email,
 			nome: nome,
 			telefone: telefone,
-      mensagem: mensagem,
-     }
-     emailjs.send(
-      'gmail',
-      'contato',
-       templateParams,
-      'user_2fS6upKTcpzVJIpEScXzE'
-		 )
-		 this.resetForm();
+			mensagem: mensagem
+		})
+		.then(function(){this.resetForm()})
+		.catch(function(error){console.log('erro: ', error)});
 	}
 	resetForm() {
     this.setState({
