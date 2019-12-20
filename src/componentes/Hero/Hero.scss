@@ -29,6 +29,9 @@
         padding: 25px;
         margin: 0 auto;
         z-index: 3;
+        @media screen and (min-width: 768px) {
+            top: 80px;
+        }
     }
     &__titulo {
         font-size: 62px;
