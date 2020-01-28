@@ -6,7 +6,7 @@ class Whats extends React.Component {
 	render() {
 		return(
 			<div className="whats">
-				<a href="" target="_blank">
+				<a href="https://api.whatsapp.com/send?phone=5511981014986" target="_blank">
 					<img src={WhatsLogo} alt="Whats App"/>
 				</a>
 			</div>

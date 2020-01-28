@@ -52,7 +52,7 @@ class Contato extends React.Component {
 						<div className="contato__conteudo-item">
 							<p className="contato__texto">
 								<span>Whats App:</span>
-								11 99898-7998
+								11 98101-4986
 							</p>
 						</div>
 					</div>

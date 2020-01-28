@@ -1,5 +1,4 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
 import axios from 'axios';
 import './FormContato.scss';
 import '../../assets/sass/botoes.scss';
@@ -17,13 +16,13 @@ class FormContato extends React.Component {
 	}
   handleSubmit(e) {
     e.preventDefault();
-    const { nome, telefone, email, mensagem } = this.state
+		const { nome, telefone, email, mensagem } = this.state
     const data = new FormData ()
     data.append ('nome', nome)
     data.append ('telefone', telefone)
     data.append ('email', email)
 		data.append ('mensagem', mensagem)
-    axios.post('https://cors-anywhere.herokuapp.com/https://vagalumeria.com.br/sendmail/index.php', data)
+    axios.post('https://starsonic.com.br/sendmail/index.php', data)
     .then( (response) => {
 			this.setState({
 				nome: '',
@@ -34,6 +33,7 @@ class FormContato extends React.Component {
 			});
     })
     .catch( (response) => {
+			this.setState({carregando: false});
       console.log(response);
     });
 	};

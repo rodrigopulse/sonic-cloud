@@ -10,7 +10,7 @@ import Contato from './paginas/Contato/Contato';
 
 import {
     BrowserRouter as Router,
-    Route
+    Route,
 } from 'react-router-dom';
 
 import * as serviceWorker from './serviceWorker';
