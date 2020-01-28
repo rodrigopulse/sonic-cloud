@@ -22,7 +22,7 @@ class FormContato extends React.Component {
     data.append ('telefone', telefone)
     data.append ('email', email)
 		data.append ('mensagem', mensagem)
-    axios.post('https://starsonic.com.br/sendmail/index.php', data)
+    axios.post('https://panasonicpabxemnuvem.com.br/sendmail/index.php', data)
     .then( (response) => {
 			this.setState({
 				nome: '',
