@@ -12,8 +12,13 @@ import {
     BrowserRouter as Router,
     Route,
 } from 'react-router-dom';
-
+import TagManager from 'react-gtm-module';
 import * as serviceWorker from './serviceWorker';
+
+const tagManagerArgs = {
+    gtmId: 'GTM-5LKBSFG'
+  }
+TagManager.initialize(tagManagerArgs)
 
 ReactDOM.render(
     <div className="wrapper">
