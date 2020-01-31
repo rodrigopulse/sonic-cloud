@@ -1,5 +1,7 @@
 import React from 'react';
 import axios from 'axios';
+import MaskedFormControl from 'react-bootstrap-maskedinput'
+import Carregando from '../Carregando/Carregando';
 import './FormContato.scss';
 import '../../assets/sass/botoes.scss';
 
@@ -12,10 +14,12 @@ class FormContato extends React.Component {
 		telefone: '',
 		email: '',
 		mensagem: '',
-		showModal: false
+		showModal: false,
+		carregando: false
 	}
   handleSubmit(e) {
-    e.preventDefault();
+		e.preventDefault();
+		this.setState({carregando: true})
 		const { nome, telefone, email, mensagem } = this.state
     const data = new FormData ()
     data.append ('nome', nome)
@@ -29,12 +33,14 @@ class FormContato extends React.Component {
 				telefone: '',
 				email: '',
 				mensagem: '',
-				showModal: true
+				showModal: true,
+				carregando: false
 			});
     })
     .catch( (response) => {
 			this.setState({carregando: false});
-      console.log(response);
+			alert('Erro a enviar a sua mensagem, por favor tente novamente');
+      console.log('Erro :', response);
     });
 	};
   handleChange = (param, e) => {
@@ -43,6 +49,7 @@ class FormContato extends React.Component {
 	render() {
 		return(
 			<div className='formulario-contato'>
+				{this.state.carregando ? <Carregando /> : null}
 				<form  onSubmit={this.handleSubmit.bind(this)}>
 						<div className="formulario-contato__grupo" id="formContato">
 							<input
@@ -65,7 +72,8 @@ class FormContato extends React.Component {
 							/>
 						</div>
 						<div className="formulario-contato__grupo">
-							<input
+							<MaskedFormControl
+								mask='(11) 1111-11111'
 								id="telefone"
 								value={this.state.telefone}
 								onChange={e => this.setState({ telefone: e.target.value })}

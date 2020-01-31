@@ -24,11 +24,15 @@
         height: auto;
         display: block;
         font-size: 16px;
-        padding: 12px 10px;
+        padding: 16px 10px;
         box-shadow: none;
         -webkit-appearance: none;
-        border: 1px solid #29639E;
-        border-radius: 13px;
+        border: 1px solid #888;
+        border-radius: 8px;
+        &:focus {
+            outline: 0;
+            border: 2px solid #29639E;
+        }
     }
 }
 .modal {
